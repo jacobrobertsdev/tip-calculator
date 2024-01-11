@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --background: #39393a;
+  --offset: #464648;
+  --inputs: #5e5e61;
+  --accent: #e6e6e6;
+  --neutral: #b0b0b0;
+  --text: white;
+  --headings: "Comfortaa", sans-serif;
+  --body: "Poppins", sans-serif;
+  --box-shadow: 0px 3px 6px -2px black;
+}
+
+body {
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: var(--headings);
+  font-weight: bold;
+  color: var(--text);
+}
+
+main {
+  background-color: var(--offset);
+  margin: 2rem auto;
+  max-width: 60%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: var(--box-shadow);
+  height: 9rem;
+  border-radius: 10px;
+}
+::placeholder {
+  color: var(--accent);
+}
+
+input {
+  max-width: 9rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--inputs);
+  border: none;
+  border-radius: 9999px;
+}
+
+.inputs {
+  font-family: var(--body);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.outputs {
+  font-family: var(--body);
+  padding-left: 1rem;
+  background-color: var(--inputs);
+  gap: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--text);
+  border-radius: 10px;
+}
+
+.button-container {
+  margin: 1rem 0;
+  display: flex;
+  gap: 0.3rem;
+}
+
+button {
+  cursor: pointer;
+  padding: 0.5rem;
+  background: transparent;
+  border: none;
+  color: var(--text);
+  box-shadow: var(--box-shadow);
+  border-radius: 5px;
+}

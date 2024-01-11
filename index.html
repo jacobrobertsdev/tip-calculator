@@ -3,7 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Poppins:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
     <title>Tip Calculator</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>Tip Calculator</h1>
+    </header>
+    <main>
+      <section class="inputs">
+        <input
+          type="text"
+          name="bill amount"
+          id="bill amount"
+          class="bill-input"
+          placeholder="Enter bill..."
+        />
+        <div class="button-container">
+          <button class="fifteen">15%</button>
+          <button class="twenty">20%</button>
+          <button class="twentyfive">25%</button>
+        </div>
+      </section>
+      <section class="outputs">
+        <p class="tip-output">Tip:</p>
+        <p class="total-output">Total:</p>
+      </section>
+    </main>
+  </body>
 </html>
