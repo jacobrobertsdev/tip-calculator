@@ -18,22 +18,34 @@
     </header>
     <main>
       <section class="inputs">
-        <input
-          type="text"
-          name="bill amount"
-          id="bill amount"
-          class="bill-input"
-          placeholder="Enter bill..."
-        />
+        <div class="input-container">
+          <input
+            type="text"
+            name="bill amount"
+            id="bill amount"
+            class="bill-input"
+            placeholder="Enter bill amount..."
+          />
+          <button class="clear">Clear</button>
+        </div>
         <div class="button-container">
           <button class="fifteen">15%</button>
           <button class="twenty">20%</button>
           <button class="twentyfive">25%</button>
+          <button class="thirty">30%</button>
+          <button class="thirtyfive">35%</button>
+          <button class="forty">40%</button>
         </div>
       </section>
       <section class="outputs">
-        <p class="tip-output">Tip:</p>
-        <p class="total-output">Total:</p>
+        <div class="tip-output-container">
+          <p class="tip-output">Tip:</p>
+          <span class="tip-total">$000</span>
+        </div>
+        <div class="bill-output-container">
+          <p class="total-output">Total:</p>
+          <span class="bill-total">$000</span>
+        </div>
       </section>
     </main>
   </body>
