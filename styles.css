@@ -33,7 +33,7 @@ h1 {
 main {
   background-color: var(--offset);
   margin: 1rem auto;
-  max-width: 21rem;
+  max-width: 90%;
   display: flex;
   flex-direction: column;
   box-shadow: var(--box-shadow);
@@ -65,21 +65,17 @@ input {
   font-family: var(--body);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 0.5rem;
   padding: 1.5rem;
 }
 
 .outputs {
-  width: 100%;
   font-family: var(--body);
   padding: 1rem;
   background-color: var(--inputs);
   gap: 0.3rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   color: var(--text);
   border-radius: 10px;
 }
@@ -92,7 +88,6 @@ input {
 
 button {
   font-family: var(--body);
-  cursor: pointer;
   padding: 0.5rem;
   background: var(--inputs);
   border: none;
@@ -102,6 +97,7 @@ button {
 }
 
 button:hover {
+  cursor: pointer;
   background-color: var(--accent);
   color: var(--background);
 }
