@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 :root {
-  --background: #39393a;
+  --background: #181a35;
   --offset: #464648;
   --inputs: #5e5e61;
   --accent: #e6e6e6;
@@ -51,7 +51,7 @@ main::before {
   z-index: -1;
   border-radius: 20px;
   animation: rotateGradient 12s linear infinite;
-  filter: blur(0.08rem);
+  /* filter: blur(0.02rem); */
 }
 
 main {
@@ -113,7 +113,7 @@ input {
 
 button {
   font-family: var(--body);
-  padding: 0.5rem;
+  padding: 0.3rem;
   background: var(--inputs);
   border: none;
   color: var(--text);
