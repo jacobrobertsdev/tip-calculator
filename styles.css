@@ -15,6 +15,12 @@
   --box-shadow: 0px 3px 5px -2px black;
 }
 
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
 body {
   background-color: var(--background);
   display: flex;
@@ -29,8 +35,27 @@ h1 {
   font-weight: 700;
   color: var(--text);
 }
+main::before {
+  content: "";
+  background-image: linear-gradient(
+    var(--gradient-angle),
+    #4700d4 75%,
+    #ff00b7
+  );
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 106%;
+  height: 108%;
+  position: absolute;
+  z-index: -1;
+  border-radius: 20px;
+  animation: rotateGradient 12s linear infinite;
+  filter: blur(0.08rem);
+}
 
 main {
+  position: relative;
   background-color: var(--offset);
   margin: 1rem auto;
   max-width: 90%;
@@ -106,4 +131,12 @@ button:hover {
 .bill-output-container {
   display: flex;
   justify-content: space-between;
+}
+@keyframes rotateGradient {
+  0% {
+    --gradient-angle: 0deg;
+  }
+  100% {
+    --gradient-angle: 360deg;
+  }
 }
